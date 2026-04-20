@@ -15,12 +15,12 @@ export const PhenomUI = () => {
             ];
         },
         /**
-         * @param {Object} param0
-         * @param {string} param0.type
-         * @param {string} param0.className
-         * @param {string} param0.id
-         * @param {CSSStyleDeclaration} param0.style
-         * @param {HTMLElement[]} param0.children
+         * @param {Object} options
+         * @param {string} options.type
+         * @param {string} options.className
+         * @param {string} options.id
+         * @param {CSSStyleDeclaration} options.style
+         * @param {HTMLElement[]} options.children
          * @returns {HTMLElement}
          */
         constructEl: ({
