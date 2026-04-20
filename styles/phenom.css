@@ -6,7 +6,7 @@ body {
 
     overflow: hidden;
 
-    cursor: default;
+    cursor: url("/resources/cur_0.png") 0 0, auto;
 }
 
 .formware.os-root {
@@ -19,4 +19,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.formware.pointer-arrow {
+    cursor: url("/resources/cur_0.png") 0 0, auto;
+}
+
+.formware.pointer-arrow-load {
+    cursor: url("/resources/cur_1.png") 0 0, auto;
+}
+
+.formware.pointer-load {
+    cursor: url("/resources/cur_2.png") 0 0, auto;
+}
+
+.formware.pointer-hand {
+    cursor: url("/resources/cur_3.png") 0 0, auto;
 }
