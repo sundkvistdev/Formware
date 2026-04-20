@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    cursor: default;
+}
+
+.formware.os-root {
+    /* Sizing */
+    width: 100%;
+    height: 100%;
+
+    /* Desktop Wallpaper */
+    background-image: url("/resources/defaultwallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

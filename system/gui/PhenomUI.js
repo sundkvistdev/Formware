@@ -1,4 +1,4 @@
-export const PhenomUI = () => {
+export default PhenomUI = () => {
     const states = [];
 
     return {
