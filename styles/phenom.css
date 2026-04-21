@@ -1,6 +1,9 @@
 body {
     background-color: black;
 
+    font-family: sans-serif;
+    color: white;
+
     width: 100vw;
     height: 100vh;
 
@@ -43,9 +46,12 @@ body {
     left: 10px;
     top: 10px;
 
-    width: 100px;
-    height: 60px;
+    width: 320px;
+    height: 240px;
 
+    background-color: wheat;
+
+    border-width: 2px;
     border-radius: 5px;
     border-color: blue;
 }
@@ -55,9 +61,21 @@ body {
     height: 36px;
 
     background-color: blue;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.fw-window .fw-titlebar .fw-title {
+    font-size: 24px;
 }
 
 .fw-window .fw-titlebar .fw-close {
     background-image: url("/resources/close.png");
-    size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.fw-window .fw-titlebar .fw-close:active {
+    filter: grayscale();
 }
