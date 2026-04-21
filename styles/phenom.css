@@ -36,3 +36,28 @@ body {
 .formware.pointer-hand {
     cursor: url("/resources/cur_3.png") 0 0, auto;
 }
+
+.fw-window {
+    position: absolute;
+
+    left: 10px;
+    top: 10px;
+
+    width: 100px;
+    height: 60px;
+
+    border-radius: 5px;
+    border-color: blue;
+}
+
+.fw-window .fw-titlebar {
+    width: 100%;
+    height: 36px;
+
+    background-color: blue;
+}
+
+.fw-window .fw-titlebar .fw-close {
+    background-image: url("/resources/close.png");
+    size: 32px;
+}
