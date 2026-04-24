@@ -64,13 +64,18 @@ body {
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .fw-window .fw-titlebar .fw-title {
     font-size: 24px;
 }
 
-.fw-window .fw-titlebar .fw-close {
+.fw-window .fw-titlebar .fw-group {
+
+}
+
+.fw-window .fw-titlebar .fw-group .fw-close {
     background-image: url("/resources/close.png");
     width: 32px;
     height: 32px;
