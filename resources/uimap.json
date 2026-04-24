@@ -1,0 +1,36 @@
+{
+    "closebtn": {
+        "default": [0, 0, 18, 18],
+        "clicked": [18, 0, 18, 18],
+        "disabled": [36, 0, 18, 18],
+        "disabled2": [54, 0, 18, 18]
+    },
+    "maximizebtn": {
+        "default": [0, 18, 18, 18],
+        "clicked": [18, 18, 18, 18],
+        "disabled": [36, 18, 18, 18],
+        "disabled2": [54, 18, 18, 18]
+    },
+    "minimizebtn": {
+        "default": [0, 36, 18, 18],
+        "clicked": [18, 36, 18, 18],
+        "disabled": [36, 36, 18, 18],
+        "disabled2": [54, 36, 18, 18]
+    },
+    "restorebtn": {
+        "default": [0, 54, 18, 18],
+        "clicked": [18, 54, 18, 18],
+        "disabled": [36, 54, 18, 18],
+        "disabled2": [54, 54, 18, 18]
+    },
+    "window": {
+        "topleft": [72, 0, 24, 24],
+        "top": [96, 0, 24, 24],
+        "topright": [120, 0, 24, 24],
+        "left": [108, 24, 4, 12],
+        "right": [112, 24, 4, 12],
+        "bottomleft": [72, 24, 12, 12],
+        "bottom": [84, 24, 12, 12],
+        "bottomright": [96, 24, 12, 12]
+    }
+}
