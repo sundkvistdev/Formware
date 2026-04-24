@@ -1,27 +1,36 @@
+const BORDER = 24;
+
 async function main() {
-    const root = document.querySelector(".formware.os-root");
-
-    const mouseCursors = [
-        "pointer-arrow",
-        "pointer-arrow-load",
-        "pointer-load",
-        "pointer-hand"
-    ];
-    const mouseCurTest = document.createElement("button");
-    mouseCurTest.classList.add("formware");
-    mouseCurTest.textContent = "HOVER";
-    
-    root.appendChild(mouseCurTest);
-
-    let mouseCurIdx = 0;
-    
-    setInterval(() => {
-        mouseCurTest.className = "formware " + mouseCursors[mouseCurIdx];
-        mouseCurIdx = (mouseCurIdx + 1) % mouseCursors.length;
-    }, 1000);
-
-
-    console.log("[Formware.System] Initialization Complete");
+    /** @type {HTMLElement} */
+    const exampleWindow = document.querySelector(".fw-window");
+    let dragging = false;
+    let startX = 0, startY = 0;
+    let origLeft = 0, origTop = 0;
+    exampleWindow.addEventListener("pointerdown", (ev) => {
+        const rect = exampleWindow.getBoundingClientRect();
+        const localY = ev.clientY - rect.top;
+        if (localY > BORDER) return;
+        dragging = true;
+        startX = ev.clientX;
+        startY = ev.clientY;
+        origLeft = exampleWindow.offsetLeft;
+        origTop = exampleWindow.offsetTop;
+        exampleWindow.setPointerCapture(ev.pointerId);
+    });
+    exampleWindow.addEventListener("pointermove", (ev) => {
+        if (!dragging)
+            return;
+        const deltaX = ev.clientX - startX;
+        const deltaY = ev.clientY - startY;
+        exampleWindow.style.left = `${origLeft + deltaX}px`;
+        exampleWindow.style.top = `${origTop + deltaY}px`;
+    });
+    exampleWindow.addEventListener("pointerup", (ev) => {
+        if (!dragging)
+            return;
+        dragging = false;
+        exampleWindow.releasePointerCapture(ev.pointerId);
+    });
 }
 
 main();
