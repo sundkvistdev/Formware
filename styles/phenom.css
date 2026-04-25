@@ -15,10 +15,19 @@ body {
 
     overflow: hidden;
 
-    cursor: url("/resources/cur_0.png") 0 0, auto;
+    cursor: url("/resources/cursors/arrow.png") 0 0, auto;
+    user-select: none;
 }
 
-.formware.os-root {
+.fw-selectable-text {
+    user-select: text !important;
+}
+
+.fw-selectable {
+    user-select: all !important;
+}
+
+.fw-os-root {
     /* Sizing */
     width: 100%;
     height: 100%;
@@ -30,45 +39,57 @@ body {
     background-size: cover;
 }
 
-.formware.pointer-arrow {
-    cursor: url("/resources/cur_0.png") 0 0, auto;
+.fw-cursor-arrow {
+    cursor: url("/resources/cursors/arrow.png") 0 0, auto;
 }
 
-.formware.pointer-arrow-load {
-    cursor: url("/resources/cur_1.png") 0 0, auto;
+.fw-cursor-arrow-load {
+    cursor: url("/resources/cursors/arrow_load.png") 0 0, progress;
 }
 
-.formware.pointer-load {
-    cursor: url("/resources/cur_2.png") 0 0, auto;
+.fw-cursor-load {
+    cursor: url("/resources/cursors/load.png") 0 0, wait;
 }
 
-.formware.pointer-hand {
-    cursor: url("/resources/cur_3.png") 0 0, auto;
+.fw-cursor-pointer {
+    cursor: url("/resources/cursors/pointer.png") 4 0, pointer;
+}
+
+.fw-cursor-beam {
+    cursor: url("/resources/cursors/beam.png") 3 9, text;
 }
 
 .fw-window {
     position: absolute;
 
-    border: 24px solid transparent;
-    border-image-source: url("/resources/window_border.png");
-    border-image-slice: 24;
-    border-image-width: 24px;
+    border: 4px solid transparent;
+    border-image-source: url("/resources/window_border_thin.png");
+    border-image-slice: 4;
+    border-image-width: 4px;
     border-image-repeat: stretch;
 
     background-color: wheat;
 }
 
-.fw-window .fw-title {
+.fw-window .fw-titlebar {
+    height: 24px;
+    width: 100%;
+
+    background-image: url("/resources/window_titlebar.png");
+    border-image-repeat: stretch;
+}
+
+.fw-window .fw-titlebar .fw-title {
     position: absolute;
-    left: -16px;
-    top: -20px;
+    left: 1px;
+    top: 0px;
     font-size: 18px;
 }
 
-.fw-window .fw-group {
+.fw-window .fw-titlebar .fw-group {
     position: absolute;
-    right: -20px;
-    top: -19px;
+    right: 1px;
+    top: 1px;
     display: flex;
     flex-direction: row-reverse;
     gap: 1px;

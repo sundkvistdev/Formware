@@ -7,20 +7,27 @@
     <title>Formware OS</title>
 </head>
 <body>
-    <div class="formware os-root">
+    <div class="fw-os-root">
         <!-- Window Test -->
         <div class="fw-window" style="left: 50px; top: 50px; width: 320px; height: 240px;">
             <!-- Root Els. -->
-            <div class="fw-title">Window</div>
-            <div class="fw-group">
-                <div class="fw-wndbtn fw-closebtn"></div>
-                <div class="fw-wndbtn fw-maximizebtn"></div>
-                <div class="fw-wndbtn fw-minimizebtn"></div>
+            <div class="fw-titlebar">
+                <div class="fw-title">Window</div>
+                <div class="fw-group">
+                    <div class="fw-wndbtn fw-closebtn"></div>
+                    <div class="fw-wndbtn fw-maximizebtn"></div>
+                    <div class="fw-wndbtn fw-minimizebtn"></div>
+                </div>
             </div>
+            
 
             <!-- Content -->
             <div class="fw-wcontent">
-                <div style="position: absolute; left: -20px; top: 0px; background-image: var(--uiatl); background-position: 0px -128px; width: 32px; height: 32px;"></div>
+                <button class="fw-cursor-arrow">Arrow (Default)</button>
+                <button class="fw-cursor-arrow-load">Arrow Load</button>
+                <button class="fw-cursor-load">Load</button>
+                <button class="fw-cursor-pointer">Pointer</button>
+                <button class="fw-cursor-beam">Beam</button>
             </div>
         </div>
     </div>
