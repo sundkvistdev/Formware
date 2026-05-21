@@ -69,6 +69,7 @@ body {
     border-image-repeat: stretch;
 
     background-color: wheat;
+    background-clip: padding-box;
 }
 
 .fw-window .fw-titlebar {
