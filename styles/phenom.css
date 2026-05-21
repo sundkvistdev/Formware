@@ -108,3 +108,50 @@ body {
 
 .fw-wndbtn:active { background-position-x: -18px; }
 .fw-wndbtn:disabled { background-position-x: -36px; }
+
+* {
+    cursor: url("/resources/cursors/arrow.png") 0 0, auto;
+}
+
+.fw-checkbox {
+    width: 16px;
+    height: 16px;
+
+    background-image: url("/resources/ui.png");
+    background-position: -72px -36px;
+}
+
+.fw-checkbox.checked {
+    background-position-x: -88px;
+}
+
+.fw-checkbox.indeterminate {
+    background-position-x: -104px;
+}
+
+.fw-radiobutton {
+    width: 16px;
+    height: 16px;
+
+    background-image: url("/resources/ui.png");
+    background-position: -72px -52px;
+}
+
+.fw-radiobutton.checked {
+    background-position-x: -88px;
+}
+
+.fw-radiobutton.indeterminate {
+    background-position-x: -104px;
+}
+
+.fw-control-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.fw-label {
+    color: black;
+    font-size: 14px;
+}

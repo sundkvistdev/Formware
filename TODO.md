@@ -7,3 +7,6 @@
     - `[ ]` Working taskbar app buttons
     - `[ ]` Tray icons
     - `[ ]` Tray balloons/notifications
+
+    - `[X]` Custom Checkboxes
+    - `[ ]` Custom Radio buttons
