@@ -7,7 +7,8 @@
 body {
     background-color: black;
 
-    font-family: "MS Sans Serif";
+    /*font-family: "MS Sans Serif"; <-- the bold version is AWFUL. */
+    font-family: "Tahoma";
     color: white;
 
     width: 100vw;
@@ -146,6 +147,8 @@ body {
 }
 
 .fw-control-row {
+    height: 18px;
+
     display: flex;
     align-items: center;
     gap: 6px;
@@ -153,5 +156,5 @@ body {
 
 .fw-label {
     color: black;
-    font-size: 14px;
+    font-size: 12px;
 }

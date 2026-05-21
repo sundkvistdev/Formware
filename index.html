@@ -9,6 +9,9 @@
 </head>
 <body>
     <div class="fw-os-root">
+        <!-- Taskbar -->
+        
+
         <!-- Window Test -->
         <div class="fw-window" style="left: 50px; top: 50px; width: 320px; height: 240px;">
             <!-- Root Els. -->
@@ -34,6 +37,16 @@
                 <p style="color: black; font-size: 11px;">
                     Content-Text!
                 </p>
+                <div class="fw-control-row" onclick="this.querySelector('.fw-checkbox').classList.toggle('checked')">
+                    <div class="fw-checkbox">
+                    </div>
+                    <div class="fw-label"><strong>Do I consent?</strong></div>
+                </div>
+                <div class="fw-control-row" onclick="this.querySelector('.fw-checkbox').classList.toggle('checked')">
+                    <div class="fw-checkbox">
+                    </div>
+                    <div class="fw-label">I consent</div>
+                </div>
                 <div class="fw-control-row" onclick="this.querySelector('.fw-checkbox').classList.toggle('checked')">
                     <div class="fw-checkbox">
                     </div>
